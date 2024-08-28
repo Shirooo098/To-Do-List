@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+:root{
+    --main-white: #f2f2f2;
+    --main-black: #121212;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100svh;
+    width: 100svw;
+    background-color: var(--main-white);
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+
+
+
+
+header{
+    display: flex;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #000;
+}
+h1{
+    float: left;
+    padding: 0.5em;
+}
+
+main{
+    width: 60svw;
+}
+
+
+.container{
+    width: auto;
+    margin: auto;
+}
+
+
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    color: var(--main-black);
+}
+
+th{
+    font-size: 2rem;
+}
+td{
+    font-size: 1.5em;
+}
+td:nth-child(2){
+    text-align: left;
+    padding-left: 1em;
+}
+
+.btn-delete{
+    background-color: rgb(231, 58, 58);
+    color: var(--main-white);
+    border: none;
+    width: 4svw;
+}
+.btn-delete:hover{
+    cursor: pointer;
+    background-color: rgba(182, 45, 45, 0.822);
+    transition: 0.3s ease;
+}
+
+aside{
+    width: 30svw;
+    border: 1px solid #000;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: var(--main-black);
+}
+
+input, button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+form button{
+    align-self: flex-end;
+    width: 4svw;
+}
+
+.btn-add{
+    background-color: #3f7ff5;
+    color: #fcfcfc;
+    align-self: flex-end;
+    width: 4svw;
+    border-radius: 4px;
+    border: none;
+}
+.btn-add:hover{
+    cursor: pointer;
+    background-color: #376ac7;
+    transition: 0.3s ease;
+}
